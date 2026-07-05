@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#0a0a0a"/>
+  
+  <!-- Grid background -->
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#grid2)"/>
+  
+  <!-- Title -->
+  <text x="40" y="45" font-family="monospace" font-size="10" fill="#878787" letter-spacing="2">SYSTEM ARCHITECTURE</text>
+  <text x="40" y="75" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" font-weight="700">Microservices — Distributed Backend</text>
+  
+  <!-- Client Layer -->
+  <text x="40" y="115" font-family="monospace" font-size="9" fill="#878787" letter-spacing="2">CLIENT LAYER</text>
+  
+  <rect x="40" y="130" width="100" height="45" rx="2" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="rgba(255,255,255,0.03)"/>
+  <text x="90" y="157" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">Web App</text>
+  
+  <rect x="160" y="130" width="100" height="45" rx="2" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="rgba(255,255,255,0.03)"/>
+  <text x="210" y="157" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">Mobile</text>
+  
+  <rect x="280" y="130" width="100" height="45" rx="2" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="rgba(255,255,255,0.03)"/>
+  <text x="330" y="157" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">3rd Party</text>
+  
+  <!-- Arrow down to API Gateway -->
+  <line x1="200" y1="175" x2="200" y2="205" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <line x1="200" y1="205" x2="380" y2="205" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <line x1="380" y1="205" x2="380" y2="220" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <polygon points="376,220 380,228 384,220" fill="rgba(255,255,255,0.3)"/>
+  
+  <!-- API Gateway -->
+  <text x="40" y="225" font-family="monospace" font-size="9" fill="#878787" letter-spacing="2">GATEWAY</text>
+  
+  <rect x="250" y="230" width="260" height="50" rx="2" stroke="#ff3b30" stroke-width="1.5" fill="rgba(255,59,48,0.08)"/>
+  <text x="380" y="252" font-family="system-ui" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="700">API Gateway</text>
+  <text x="380" y="270" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">Auth · Rate Limit · Load Balance · RBAC</text>
+  
+  <!-- Arrows from gateway to services -->
+  <line x1="300" y1="280" x2="300" y2="310" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="380" y1="280" x2="380" y2="310" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="460" y1="280" x2="460" y2="310" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="540" y1="280" x2="600" y2="310" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="220" y1="280" x2="140" y2="310" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+  
+  <!-- Microservices Layer -->
+  <text x="40" y="325" font-family="monospace" font-size="9" fill="#878787" letter-spacing="2">SERVICES</text>
+  
+  <!-- Auth Service -->
+  <rect x="60" y="335" width="130" height="55" rx="2" stroke="#ff3b30" stroke-width="1" fill="rgba(255,59,48,0.05)"/>
+  <text x="125" y="358" font-family="system-ui" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Auth Service</text>
+  <text x="125" y="377" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">JWT · OAuth · RBAC</text>
+  
+  <!-- Loan Service -->
+  <rect x="210" y="335" width="130" height="55" rx="2" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="rgba(255,255,255,0.03)"/>
+  <text x="275" y="358" font-family="system-ui" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Loan Service</text>
+  <text x="275" y="377" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">Lifecycle · EMI</text>
+  
+  <!-- Payment Service -->
+  <rect x="360" y="335" width="130" height="55" rx="2" stroke="#ff3b30" stroke-width="1" fill="rgba(255,59,48,0.05)"/>
+  <text x="425" y="358" font-family="system-ui" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Payment Service</text>
+  <text x="425" y="377" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">Gateway · Recon</text>
+  
+  <!-- CRM Service -->
+  <rect x="510" y="335" width="130" height="55" rx="2" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="rgba(255,255,255,0.03)"/>
+  <text x="575" y="358" font-family="system-ui" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">CRM Service</text>
+  <text x="575" y="377" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">Leads · Pipeline</text>
+  
+  <!-- Notification Service -->
+  <rect x="660" y="335" width="110" height="55" rx="2" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="rgba(255,255,255,0.03)"/>
+  <text x="715" y="358" font-family="system-ui" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Notifications</text>
+  <text x="715" y="377" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">Email · SMS</text>
+  
+  <!-- Data Layer -->
+  <line x1="40" y1="420" x2="760" y2="420" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="40" y="450" font-family="monospace" font-size="9" fill="#878787" letter-spacing="2">DATA LAYER</text>
+  
+  <!-- PostgreSQL -->
+  <rect x="60" y="465" width="120" height="50" rx="2" stroke="#ff3b30" stroke-width="1.5" fill="rgba(255,59,48,0.08)"/>
+  <text x="120" y="488" font-family="monospace" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">PostgreSQL</text>
+  <text x="120" y="505" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">Primary DB</text>
+  
+  <!-- Redis -->
+  <rect x="200" y="465" width="110" height="50" rx="2" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="rgba(255,255,255,0.03)"/>
+  <text x="255" y="488" font-family="monospace" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Redis</text>
+  <text x="255" y="505" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">Cache · Sessions</text>
+  
+  <!-- S3 -->
+  <rect x="330" y="465" width="100" height="50" rx="2" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="rgba(255,255,255,0.03)"/>
+  <text x="380" y="488" font-family="monospace" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">AWS S3</text>
+  <text x="380" y="505" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">Documents</text>
+  
+  <!-- Elasticsearch -->
+  <rect x="450" y="465" width="130" height="50" rx="2" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="rgba(255,255,255,0.03)"/>
+  <text x="515" y="488" font-family="monospace" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Elasticsearch</text>
+  <text x="515" y="505" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">Search · Logs</text>
+  
+  <!-- Metrics bottom -->
+  <line x1="40" y1="545" x2="760" y2="545" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  
+  <text x="60" y="575" font-family="system-ui" font-size="22" fill="#ff3b30" font-weight="800">3x</text>
+  <text x="60" y="592" font-family="monospace" font-size="8" fill="#878787">FASTER RESPONSE</text>
+  
+  <text x="200" y="575" font-family="system-ui" font-size="22" fill="#ffffff" font-weight="800">10K+</text>
+  <text x="200" y="592" font-family="monospace" font-size="8" fill="#878787">DAILY REQUESTS</text>
+  
+  <text x="370" y="575" font-family="system-ui" font-size="22" fill="#ffffff" font-weight="800">40%</text>
+  <text x="370" y="592" font-family="monospace" font-size="8" fill="#878787">FEWER DEPLOY CONFLICTS</text>
+  
+  <text x="580" y="575" font-family="system-ui" font-size="22" fill="#ff3b30" font-weight="800">5</text>
+  <text x="580" y="592" font-family="monospace" font-size="8" fill="#878787">MICROSERVICES</text>
+</svg>

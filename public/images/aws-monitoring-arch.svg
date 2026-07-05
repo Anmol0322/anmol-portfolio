@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#0a0a0a"/>
+  
+  <!-- Title -->
+  <text x="40" y="45" font-family="monospace" font-size="10" fill="#878787" letter-spacing="2">SYSTEM ARCHITECTURE</text>
+  <text x="40" y="75" font-family="sans-serif" font-size="22" fill="#ffffff" font-weight="700">AWS Cloud Integration &amp; Monitoring</text>
+  
+  <!-- Production Services Layer -->
+  <text x="40" y="115" font-family="monospace" font-size="9" fill="#878787" letter-spacing="2">PRODUCTION SERVICES</text>
+  
+  <rect x="40" y="130" width="110" height="50" rx="2" stroke="#333333" stroke-width="1" fill="#111111"/>
+  <text x="95" y="152" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="600">Auth Service</text>
+  <text x="95" y="170" font-family="monospace" font-size="8" fill="#878787" text-anchor="middle">Node.js</text>
+  
+  <rect x="165" y="130" width="110" height="50" rx="2" stroke="#333333" stroke-width="1" fill="#111111"/>
+  <text x="220" y="152" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="600">Loan Service</text>
+  <text x="220" y="170" font-family="monospace" font-size="8" fill="#878787" text-anchor="middle">NestJS</text>
+  
+  <rect x="290" y="130" width="110" height="50" rx="2" stroke="#333333" stroke-width="1" fill="#111111"/>
+  <text x="345" y="152" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="600">Payment Svc</text>
+  <text x="345" y="170" font-family="monospace" font-size="8" fill="#878787" text-anchor="middle">NestJS</text>
+  
+  <rect x="415" y="130" width="110" height="50" rx="2" stroke="#333333" stroke-width="1" fill="#111111"/>
+  <text x="470" y="152" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="600">CRM Service</text>
+  <text x="470" y="170" font-family="monospace" font-size="8" fill="#878787" text-anchor="middle">NestJS</text>
+  
+  <rect x="540" y="130" width="110" height="50" rx="2" stroke="#333333" stroke-width="1" fill="#111111"/>
+  <text x="595" y="152" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="600">Notifications</text>
+  <text x="595" y="170" font-family="monospace" font-size="8" fill="#878787" text-anchor="middle">Node.js</text>
+  
+  <!-- Arrows down from services -->
+  <line x1="95" y1="180" x2="95" y2="210" stroke="#555555" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="220" y1="180" x2="220" y2="210" stroke="#555555" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="345" y1="180" x2="345" y2="210" stroke="#555555" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="470" y1="180" x2="470" y2="210" stroke="#555555" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="595" y1="180" x2="595" y2="210" stroke="#555555" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Collector bar -->
+  <rect x="40" y="210" width="610" height="40" rx="2" stroke="#ff3b30" stroke-width="1.5" fill="#1a0807"/>
+  <text x="345" y="235" font-family="sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="700">Log Aggregation &amp; Event Stream</text>
+  
+  <!-- Arrows down to AWS services -->
+  <line x1="150" y1="250" x2="150" y2="290" stroke="#ff3b30" stroke-width="1.5"/>
+  <polygon points="146,290 150,298 154,290" fill="#ff3b30"/>
+  
+  <line x1="380" y1="250" x2="380" y2="290" stroke="#ff3b30" stroke-width="1.5"/>
+  <polygon points="376,290 380,298 384,290" fill="#ff3b30"/>
+  
+  <line x1="580" y1="250" x2="580" y2="290" stroke="#ff3b30" stroke-width="1.5"/>
+  <polygon points="576,290 580,298 584,290" fill="#ff3b30"/>
+  
+  <!-- AWS Services -->
+  <text x="40" y="285" font-family="monospace" font-size="9" fill="#878787" letter-spacing="2">AWS</text>
+  
+  <!-- CloudWatch -->
+  <rect x="60" y="300" width="180" height="70" rx="2" stroke="#ff3b30" stroke-width="1.5" fill="#1a0807"/>
+  <text x="150" y="325" font-family="sans-serif" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="700">CloudWatch</text>
+  <text x="150" y="345" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">Metrics &amp; Dashboards</text>
+  <text x="150" y="360" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">Alarms &amp; Alerts</text>
+  
+  <!-- S3 -->
+  <rect x="280" y="300" width="180" height="70" rx="2" stroke="#ff3b30" stroke-width="1.5" fill="#1a0807"/>
+  <text x="370" y="325" font-family="sans-serif" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="700">S3</text>
+  <text x="370" y="345" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">Log Storage Pipeline</text>
+  <text x="370" y="360" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">Document Archives</text>
+  
+  <!-- Elasticsearch -->
+  <rect x="500" y="300" width="180" height="70" rx="2" stroke="#ff3b30" stroke-width="1.5" fill="#1a0807"/>
+  <text x="590" y="325" font-family="sans-serif" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="700">Elasticsearch</text>
+  <text x="590" y="345" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">Full-text Log Search</text>
+  <text x="590" y="360" font-family="monospace" font-size="9" fill="#878787" text-anchor="middle">Query &amp; Filtering</text>
+  
+  <!-- Arrows to output -->
+  <line x1="150" y1="370" x2="150" y2="410" stroke="#555555" stroke-width="1"/>
+  <line x1="370" y1="370" x2="370" y2="410" stroke="#555555" stroke-width="1"/>
+  <line x1="590" y1="370" x2="590" y2="410" stroke="#555555" stroke-width="1"/>
+  
+  <!-- Output Layer -->
+  <text x="40" y="410" font-family="monospace" font-size="9" fill="#878787" letter-spacing="2">OBSERVABILITY OUTPUT</text>
+  
+  <rect x="60" y="420" width="180" height="50" rx="2" stroke="#333333" stroke-width="1" fill="#111111"/>
+  <text x="150" y="442" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="600">Real-time Dashboards</text>
+  <text x="150" y="460" font-family="monospace" font-size="8" fill="#878787" text-anchor="middle">Latency · Errors · Throughput</text>
+  
+  <rect x="280" y="420" width="180" height="50" rx="2" stroke="#333333" stroke-width="1" fill="#111111"/>
+  <text x="370" y="442" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="600">Automated Alerts</text>
+  <text x="370" y="460" font-family="monospace" font-size="8" fill="#878787" text-anchor="middle">P1 Detection · Auto-escalation</text>
+  
+  <rect x="500" y="420" width="180" height="50" rx="2" stroke="#333333" stroke-width="1" fill="#111111"/>
+  <text x="590" y="442" font-family="sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="600">Searchable Logs</text>
+  <text x="590" y="460" font-family="monospace" font-size="8" fill="#878787" text-anchor="middle">Trace · Debug · Audit</text>
+  
+  <!-- Metrics divider -->
+  <line x1="40" y1="505" x2="760" y2="505" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <text x="40" y="535" font-family="monospace" font-size="10" fill="#878787" letter-spacing="2">IMPACT METRICS</text>
+  
+  <text x="40" y="575" font-family="sans-serif" font-size="28" fill="#ff3b30" font-weight="800">50%</text>
+  <text x="40" y="593" font-family="monospace" font-size="9" fill="#878787">FEWER P1 INCIDENTS</text>
+  
+  <text x="220" y="575" font-family="sans-serif" font-size="28" fill="#ffffff" font-weight="800">Hrs→Min</text>
+  <text x="220" y="593" font-family="monospace" font-size="9" fill="#878787">INCIDENT TRIAGE TIME</text>
+  
+  <text x="450" y="575" font-family="sans-serif" font-size="28" fill="#ffffff" font-weight="800">24/7</text>
+  <text x="450" y="593" font-family="monospace" font-size="9" fill="#878787">REAL-TIME MONITORING</text>
+  
+  <text x="620" y="575" font-family="sans-serif" font-size="28" fill="#ff3b30" font-weight="800">All</text>
+  <text x="620" y="593" font-family="monospace" font-size="9" fill="#878787">SERVICES CENTRALIZED</text>
+</svg>

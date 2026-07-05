@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#0a0a0a"/>
+  
+  <!-- Title -->
+  <text x="40" y="45" font-family="monospace" font-size="10" fill="#878787" letter-spacing="2">SYSTEM ARCHITECTURE</text>
+  <text x="40" y="75" font-family="sans-serif" font-size="22" fill="#ffffff" font-weight="700">Digital Lending Platform — Loan Lifecycle</text>
+  
+  <!-- Flow nodes Row 1 -->
+  <!-- Customer Acquisition -->
+  <rect x="40" y="120" width="140" height="60" rx="2" stroke="#ff3b30" stroke-width="1.5" fill="#1a0807"/>
+  <text x="110" y="147" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Customer</text>
+  <text x="110" y="165" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Acquisition</text>
+  
+  <!-- Arrow -->
+  <line x1="180" y1="150" x2="220" y2="150" stroke="#ff3b30" stroke-width="1.5"/>
+  <polygon points="220,146 228,150 220,154" fill="#ff3b30"/>
+  
+  <!-- KYC -->
+  <rect x="230" y="120" width="120" height="60" rx="2" stroke="#333333" stroke-width="1" fill="#111111"/>
+  <text x="290" y="147" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">KYC &amp;</text>
+  <text x="290" y="165" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Verification</text>
+  
+  <!-- Arrow -->
+  <line x1="350" y1="150" x2="390" y2="150" stroke="#555555" stroke-width="1.5"/>
+  <polygon points="390,146 398,150 390,154" fill="#555555"/>
+  
+  <!-- Underwriting -->
+  <rect x="400" y="120" width="130" height="60" rx="2" stroke="#333333" stroke-width="1" fill="#111111"/>
+  <text x="465" y="147" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Credit</text>
+  <text x="465" y="165" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Underwriting</text>
+  
+  <!-- Arrow -->
+  <line x1="530" y1="150" x2="570" y2="150" stroke="#555555" stroke-width="1.5"/>
+  <polygon points="570,146 578,150 570,154" fill="#555555"/>
+  
+  <!-- Loan Disbursement -->
+  <rect x="580" y="120" width="140" height="60" rx="2" stroke="#ff3b30" stroke-width="1.5" fill="#1a0807"/>
+  <text x="650" y="147" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Loan</text>
+  <text x="650" y="165" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Disbursement</text>
+  
+  <!-- Vertical arrow down -->
+  <line x1="650" y1="180" x2="650" y2="230" stroke="#555555" stroke-width="1.5"/>
+  <polygon points="646,230 650,238 654,230" fill="#555555"/>
+  
+  <!-- Row 2 -->
+  <!-- EMI Billing -->
+  <rect x="580" y="240" width="140" height="60" rx="2" stroke="#333333" stroke-width="1" fill="#111111"/>
+  <text x="650" y="267" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">EMI Billing &amp;</text>
+  <text x="650" y="285" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Scheduling</text>
+  
+  <!-- Arrow left -->
+  <line x1="580" y1="270" x2="540" y2="270" stroke="#555555" stroke-width="1.5"/>
+  <polygon points="540,266 532,270 540,274" fill="#555555"/>
+  
+  <!-- Payment Processing -->
+  <rect x="400" y="240" width="130" height="60" rx="2" stroke="#ff3b30" stroke-width="1.5" fill="#1a0807"/>
+  <text x="465" y="267" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Payment</text>
+  <text x="465" y="285" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Processing</text>
+  
+  <!-- Arrow left -->
+  <line x1="400" y1="270" x2="360" y2="270" stroke="#555555" stroke-width="1.5"/>
+  <polygon points="360,266 352,270 360,274" fill="#555555"/>
+  
+  <!-- Collections -->
+  <rect x="230" y="240" width="120" height="60" rx="2" stroke="#333333" stroke-width="1" fill="#111111"/>
+  <text x="290" y="267" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Collections &amp;</text>
+  <text x="290" y="285" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Recovery</text>
+  
+  <!-- Arrow left -->
+  <line x1="230" y1="270" x2="190" y2="270" stroke="#555555" stroke-width="1.5"/>
+  <polygon points="190,266 182,270 190,274" fill="#555555"/>
+  
+  <!-- Vehicle Asset Mgmt -->
+  <rect x="40" y="240" width="140" height="60" rx="2" stroke="#333333" stroke-width="1" fill="#111111"/>
+  <text x="110" y="267" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Vehicle Asset</text>
+  <text x="110" y="285" font-family="sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">Management</text>
+  
+  <!-- Divider -->
+  <line x1="40" y1="340" x2="760" y2="340" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <text x="40" y="375" font-family="monospace" font-size="10" fill="#878787" letter-spacing="2">TECH STACK</text>
+  
+  <!-- Stack boxes -->
+  <rect x="40" y="395" width="90" height="32" rx="2" stroke="#2a2a2a" stroke-width="1" fill="#111111"/>
+  <text x="85" y="415" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">NestJS</text>
+  
+  <rect x="145" y="395" width="100" height="32" rx="2" stroke="#2a2a2a" stroke-width="1" fill="#111111"/>
+  <text x="195" y="415" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">PostgreSQL</text>
+  
+  <rect x="260" y="395" width="90" height="32" rx="2" stroke="#2a2a2a" stroke-width="1" fill="#111111"/>
+  <text x="305" y="415" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">Next.js</text>
+  
+  <rect x="365" y="395" width="90" height="32" rx="2" stroke="#2a2a2a" stroke-width="1" fill="#111111"/>
+  <text x="410" y="415" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">TypeORM</text>
+  
+  <rect x="470" y="395" width="80" height="32" rx="2" stroke="#ff3b30" stroke-width="1" fill="#1a0807"/>
+  <text x="510" y="415" font-family="monospace" font-size="10" fill="#ff3b30" text-anchor="middle">.NET</text>
+  
+  <!-- Metrics divider -->
+  <line x1="40" y1="460" x2="760" y2="460" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <text x="40" y="495" font-family="monospace" font-size="10" fill="#878787" letter-spacing="2">IMPACT METRICS</text>
+  
+  <text x="40" y="535" font-family="sans-serif" font-size="28" fill="#ff3b30" font-weight="800">2K+</text>
+  <text x="40" y="555" font-family="monospace" font-size="9" fill="#878787">ACTIVE LOANS</text>
+  
+  <text x="180" y="535" font-family="sans-serif" font-size="28" fill="#ffffff" font-weight="800">60%</text>
+  <text x="180" y="555" font-family="monospace" font-size="9" fill="#878787">FEWER BILLING ERRORS</text>
+  
+  <text x="380" y="535" font-family="sans-serif" font-size="28" fill="#ffffff" font-weight="800">5</text>
+  <text x="380" y="555" font-family="monospace" font-size="9" fill="#878787">INTEGRATED MODULES</text>
+  
+  <text x="560" y="535" font-family="sans-serif" font-size="28" fill="#ff3b30" font-weight="800">Multi</text>
+  <text x="560" y="555" font-family="monospace" font-size="9" fill="#878787">BRAND PLATFORM</text>
+</svg>
