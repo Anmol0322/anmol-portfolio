@@ -1,4 +1,4 @@
-import { PROFILE, EDUCATION } from "@/data/portfolio";
+import { PROFILE } from "@/data/portfolio";
 
 export default function EducationContact() {
   return (
@@ -10,32 +10,14 @@ export default function EducationContact() {
     >
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
 
-        {/* Education */}
-        <div className="mb-20" data-testid="education-block">
-          <p className="section-label">[ 05 ] Education</p>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-4 border" style={{ borderColor: "var(--border)" }}>
-            <div className="lg:col-span-8 p-6 md:p-8 lg:border-r" style={{ borderColor: "var(--border)" }}>
-              <h3 className="font-display text-3xl md:text-4xl text-white">{EDUCATION.degree}</h3>
-              <p className="font-body text-[#bdbdbd] mt-3">{EDUCATION.institution}</p>
-            </div>
-            <div className="lg:col-span-4 p-6 md:p-8 flex flex-col justify-center">
-              <p className="font-mono-tech text-[10px] text-[#878787]">CGPA</p>
-              <p className="font-display text-5xl md:text-6xl text-white mt-2" style={{ color: "var(--accent)" }}>
-                {EDUCATION.cgpa.split(" ")[0]}
-              </p>
-              <p className="font-mono-tech text-[10px] text-[#878787] mt-1">/ 10.00</p>
-            </div>
-          </div>
-        </div>
-
         {/* Contact */}
-        <p className="section-label">[ 06 ] Contact</p>
+        <p className="section-label">[ 05 ] Contact</p>
         <h2
           data-testid="contact-heading"
           className="font-display text-6xl md:text-8xl lg:text-9xl text-white mt-4 leading-[0.85]"
         >
           LET&apos;S <br />
-          <span style={{ color: "var(--accent)" }}>BUILD.</span>
+          <span style={{ color: "var(--accent)" }}>CONNECT.</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">

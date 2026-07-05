@@ -20,14 +20,12 @@ export default function Projects() {
     >      <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           <div>
-            <p className="section-label">[ 04 ] Selected</p>
+            <p className="section-label">[ 04 ] Selected Work</p>
             <h2 className="font-display text-5xl md:text-6xl mt-4 text-white">
               Projects<span style={{ color: "var(--accent)" }}>.</span>
             </h2>
           </div>
-          <p className="font-body text-[#878787] text-sm max-w-md">
-            Production work — anonymized where required. Each ships behind real users and real money.
-          </p>
+
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 border-t border-l" style={{ borderColor: "var(--border)" }}>

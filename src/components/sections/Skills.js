@@ -21,14 +21,12 @@ export default function Skills() {
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           <div>
-            <p className="section-label">[ 02 ] Stack</p>
+            <p className="section-label">[ 02 ] Tech Stack</p>
             <h2 className="font-display text-5xl md:text-6xl mt-4 text-white">
               Tools<span style={{ color: "var(--accent)" }}>.</span>
             </h2>
           </div>
-          <p className="font-body text-[#878787] max-w-md text-sm">
-            A working set sharpened on production. Not exhaustive — just what I reach for daily.
-          </p>
+
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-t border-l" style={{ borderColor: "var(--border)" }}>
