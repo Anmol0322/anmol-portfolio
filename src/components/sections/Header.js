@@ -16,11 +16,12 @@ export default function Header({ activeSection }) {
   const handleClick = (id) => (e) => {
     e.preventDefault();
     setMobileOpen(false);
-    const el = document.getElementById(id);
-    if (el) {
-      const top = el.getBoundingClientRect().top + window.scrollY - 60;
-      window.scrollTo({ top, behavior: "smooth" });
-    }
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 350);
   };
 
   return (
